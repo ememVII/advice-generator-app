@@ -1,0 +1,15 @@
+.attribution a {
+    text-decoration: none;
+    transition: 0.3s ease;
+    color: #263751;
+}
+
+.attribution a:hover {
+    color: #fe464e;
+}
+
+.attribution {
+    margin-top: 2rem;
+    text-align: center;
+    color: #fff;
+}

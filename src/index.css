@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap');
+
+:root {
+  --light-cyan: hsl(193, 38%, 86%);
+  --neon-green: hsl(150, 100%, 66%);
+  --grayish-blue: hsl(217, 19%, 38%);
+  --dark-grayish-blue: hsl(217, 19%, 24%);
+  --dark-blue: hsl(218, 23%, 16%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  background-color: var(--dark-blue);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.advice-card {
+  background-color: var(--dark-grayish-blue);
+  border-radius: 15px;
+  margin: 0 1rem;
+  padding-bottom: 5rem !important;
+}
+
+.advice-card img{
+  height: 1.5rem;
+}
+
+.advice-card .quote-head {
+  color: var(--neon-green);
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+.advice-card .quote {
+  color: var(--light-cyan);
+  font-size: 28px;
+  font-weight: 800;
+  padding: 1.5rem 0;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.advice-card .quote::before {
+  content: "❝ ";
+  font-weight: 500 !important;
+}
+
+.advice-card .quote::after {
+  content: "  ❞";
+  font-weight: 500 !important;
+}
+
+.advice-btn {
+  position: absolute;
+  background-color: var(--neon-green);
+  padding: 18px;
+  border-radius: 50%;
+  border: none;
+  bottom: -10%;
+  transition: 0.2s ease-in;
+}
+
+.advice-btn:hover {
+  box-shadow: 0px 0px 25px 0px rgba(82,255,168,1);
+}
